@@ -23,7 +23,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run Bandit
-        uses: shundor/bandit-action@v1.0
+        uses: mdegis/bandit-action@v1.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           path: "."
