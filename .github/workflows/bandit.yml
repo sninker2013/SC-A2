@@ -1,6 +1,7 @@
-uses: shundor/bandit-action@v1
-with: 
+- name: Run Bandit
+  uses: shundor/bandit-action@v1
+  with:
     path: "."
     level: high
     confidence: high
-    exit_zero: true   
+    exit_zero: true
