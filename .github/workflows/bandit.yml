@@ -25,7 +25,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run Bandit Scan
-        uses: jvandebon/bandit-scan@v1.0.1
+        uses: shundor/bandit-scan@v4.0
         with:
           # Path to scan (default: '.')
           path: '.'
