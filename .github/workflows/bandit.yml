@@ -1,6 +1,2 @@
+name: bandit
 uses: shundor/bandit-action@v4
-    with: 
-        path: "."
-        level: high
-        confidence: high
-        exit_zero: true 
