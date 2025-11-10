@@ -27,7 +27,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run Bandit
-        uses: shundor/bandit-action@v4
+        uses: shundor/bandit-action
         with:
           path: "."
           level: high
