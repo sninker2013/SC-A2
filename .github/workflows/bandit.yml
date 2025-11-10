@@ -13,6 +13,10 @@ jobs:
   bandit_scan:
     name: Run Bandit Scan
     runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -23,7 +27,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run Bandit
-        uses: mdegis/bandit-action@v1.0
+        uses: PycQA/bandit-action@v1.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           path: "."
